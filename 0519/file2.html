@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Елка или Ёлка</title>
+    
+    <script>
+        let question = 'Зимой и летом одним цветом';
+        let answer = ['елка', 'кровища', 'свитер', 'батя'];
+        let useranswer = prompt(question).toLowerCase().replace('ё', 'е');
+        let flag = false;
+
+        for(i = 0; i < answer.length; i++){
+            if (useranswer == answer[i]){
+            alert('ai maladec');
+            flag = true;
+            break;
+            }
+        }
+       if (!flag) alert('Durak?');
+        
+
+</script>
+</head>
+<body></body>
+</html>
